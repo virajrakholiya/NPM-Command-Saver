@@ -2,10 +2,16 @@
     "manifest_version": 3,
     "name": "NPM Command Saver",
     "version": "1.0",
-    "description": "Save and categorize npm commands",
+    "description": "A Chrome extension to save, categorize, and manage your frequently used npm commands for quick access.",
     "permissions": ["storage"],
     "action": {
-      "default_popup": "popup.html"
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "image/icon16.png",
+        "32": "image/icon32.png",
+        "48": "image/icon48.png",
+        "128": "image/icon128.png"
+      }
     },
     "icons": {
       "16": "image/icon16.png",
