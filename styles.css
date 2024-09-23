@@ -125,10 +125,44 @@ button:hover {
   color: #000000;
 }
 
+.copy-button i {
+  font-size: 1.2em; /* Adjust the size as needed */
+}
+
 .toggle-icon {
   transition: transform 0.3s ease;
 }
 
 .toggle-icon.open {
   transform: rotate(180deg);
+}
+
+.command-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 4px 8px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.delete-button:hover {
+  background-color: var(--primary-hover);
+  color: #000000;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Add this to your CSS file */
+.hide-delete .delete-button {
+  display: none;
 }
