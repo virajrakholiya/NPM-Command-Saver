@@ -6,6 +6,9 @@ document.addEventListener('DOMContentLoaded', function() {
   const errorMessage = document.getElementById('error-message');
   const toggleDeleteButton = document.getElementById('toggle-delete');
 
+  // Hide delete buttons by default
+  commandList.classList.add('hide-delete');
+
   // Load saved commands
   loadCommands();
 
